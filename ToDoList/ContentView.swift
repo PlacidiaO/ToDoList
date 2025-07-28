@@ -14,14 +14,19 @@ struct ContentView: View {
                 Text("To-Do List")
                     .font(.title)
                     .fontWeight(.bold)
+                    .padding([.top, .leading], 10.0)
                 Spacer()
                 Button {
 
                 } label: {
                     Text("+")
-                        .fontWeight(.semibold)
+                        .font(.title)
+                        .fontWeight(.heavy)
                         .foregroundColor(Color(hue: 0.397, saturation: 0.815, brightness: 0.649))
+                        
                 }
+                .padding([.leading], 20.0)
+                .padding([.top], 15.0)
             }
             .padding()
             Spacer()
